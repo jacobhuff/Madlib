@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #7c7777;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.invite-title {
+    margin: 0 auto;
+    width: 80%;
+    height: 75px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+.inputs {
+    margin: 0 auto;
+    width: 50%;
+    height: 550px;
+    background-color: #b1aeae;
+    display: flex;
+    flex-direction: column;
+}
+.inputs input {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    text-align: center;
+}
+.inputs label {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+}
+.container p {
+    margin: 0 auto;
+    height: 200px;
+    width: 40%;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 20px;
+}
