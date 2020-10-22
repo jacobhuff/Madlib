@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Quicksand&display=swap" rel="stylesheet">
     <title>Madlibs!</title>
 </head>
+
 <body>
+    <div class="invite-title">
+        <h1>Madlibs!</h1>
+    </div>
+    <div class="madlib-info">
+        <h5>Fill in the blanks to create a party invitation!</h5>
+    </div>
     <div class="container">
-        <div class="invite-title">
-            <h1>Party Invitation!</h1>
-        </div>
         <div class="inputs">
-            <label for="name">Name</label>
-            <input type="text" placeholder="Name" id="name">
-
-            <label for="theme">Theme</label>
-            <input type="text" placeholder="Theme" id="theme">
-
-            <label for="place">Place</label>
-            <input type="text" placeholder="Place" id="place">
-
-            <label for="dayOfWeek">Day of Week</label>
-            <input type="text" placeholder="Day of Week" id="dayOfWeek">
-
-            <label for="time">Time</label>
-            <input type="text" placeholder="Time" id="time">
-
-            <label for="verb">Verb</label>
-            <input type="text" placeholder="Verb" id="verb">
-
-            <label for="animal">Animal</label>
-            <input type="text" placeholder="Animal" id="animal">
-
-            <label for="bodyPart">Body Part</label>
-            <input type="text" placeholder="Body Part" id="bodyPart">
-
-            <label for="email">Email</label>
-            <input type="text" placeholder="Email" id="email">
+            <div class="input-group">
+                <div class="input-text">Name</div>
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Name" id="name">
+            </div>
+            <div class="input-group">
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Theme" id="theme">
+                <div class="input-text">Theme</div>
+            </div>
+            <div class="input-group">
+                <div class="input-text">Place</div>
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Place" id="place">
+            </div>
+            <div class="input-group">
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Day of Week"
+                    id="dayOfWeek">
+                <div class="input-text">Day of Week</div>
+            </div>
+            <div class="input-group">
+                <div class="input-text">Time</div>
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Time" id="time">
+            </div>
+            <div class="input-group">
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Verb" id="verb">
+                <div class="input-text">Verb</div>
+            </div>
+            <div class="input-group">
+                <div class="input-text">Animal</div>
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Animal" id="animal">
+            </div>
+            <div class="input-group">
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Body Part"
+                    id="bodyPart">
+                <div class="input-text">Body Part</div>
+            </div>
+            <div class="input-group">
+                <div class="input-text">Email</div>
+                <input required autocomplete="off" class="madlib-input" type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input-group">
+                <button onclick="verify()" class="party-button">Submit to party!</button>
+            </div>
         </div>
-        <p>
-            NAME is having a THEME party! It's going to be at PLACE on DAYOFWEEK.
-            Please make sure to show up at TIME, or else you will be required to
-            VERB a/an ANIMAL with your BODY PART. RSVP at EMAIL.
+
+        <p id="madlib-paragraph" class="displayToggle">
         </p>
     </div>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
